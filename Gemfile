@@ -18,8 +18,9 @@ gem 'jbuilder', '~> 2.5'
 
 group :development, :test do
   gem 'byebug', platform: :mri
-  gem 'sqlite3'
 end
+
+
 
 group :development do
   gem 'web-console'
@@ -31,6 +32,10 @@ end
 group :production do
 	gem 'pg'
 	gem 'rails_12factor'
+end
+
+group :development, :test do
+	gem 'sqlite3'
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
